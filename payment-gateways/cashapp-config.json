@@ -1,0 +1,44 @@
+{
+  "gateway": "CashApp",
+  "version": "2.0",
+  "enabled": true,
+  "cashTag": "$imthepanda",
+  "displayName": "Cash App",
+  "paymentMethod": "cashapp",
+  "integration": {
+    "type": "instant_transfer",
+    "apiVersion": "v2",
+    "webhookEnabled": true,
+    "instantNotifications": true
+  },
+  "optimization": {
+    "autoAcceptPayments": true,
+    "instantWithdrawal": true,
+    "lowFeeMode": true,
+    "maximizeEarnings": true,
+    "priorityProcessing": true
+  },
+  "security": {
+    "encryptionEnabled": true,
+    "twoFactorAuth": true,
+    "fraudDetection": true
+  },
+  "features": {
+    "recurring": true,
+    "tips": true,
+    "boosts": true,
+    "instantTransfer": true,
+    "qrCode": true
+  },
+  "analytics": {
+    "trackRevenue": true,
+    "generateReports": true,
+    "realTimeMonitoring": true
+  },
+  "profitMaximization": {
+    "dynamicPricing": false,
+    "suggestedTips": true,
+    "boostVisibility": true,
+    "crossPromotion": true
+  }
+}
