@@ -1,0 +1,32 @@
+{
+  "name": "payment-gateways",
+  "version": "2.0.0",
+  "description": "Payment gateway integrations for CashApp and PayPal with IPN support",
+  "main": "payment-integration.js",
+  "scripts": {
+    "test": "node test-integration.js",
+    "validate": "node validate-config.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "payment",
+    "gateway",
+    "cashapp",
+    "paypal",
+    "ipn",
+    "revenue",
+    "optimization"
+  ],
+  "author": "PandaKitten96",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.0",
+    "body-parser": "^1.20.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

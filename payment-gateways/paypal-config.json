@@ -1,0 +1,78 @@
+{
+  "gateway": "PayPal",
+  "version": "3.0",
+  "enabled": true,
+  "email": "pandamonsterrrr@yahoo.com",
+  "displayName": "PayPal",
+  "paymentMethod": "paypal",
+  "ipn": {
+    "enabled": true,
+    "version": "2.0",
+    "url": "https://ipnpb.paypal.com/cgi-bin/webscr",
+    "sandboxUrl": "https://ipnpb.sandbox.paypal.com/cgi-bin/webscr",
+    "verificationEnabled": true,
+    "retryOnFailure": true,
+    "maxRetries": 5,
+    "notificationTypes": [
+      "payment_received",
+      "payment_completed",
+      "subscription_created",
+      "subscription_payment",
+      "refund_issued",
+      "dispute_opened"
+    ]
+  },
+  "integration": {
+    "type": "standard",
+    "apiVersion": "v3",
+    "restApiEnabled": true,
+    "checkoutSdkVersion": "5.0",
+    "expressCheckout": true,
+    "webhookEnabled": true
+  },
+  "optimization": {
+    "autoAcceptPayments": true,
+    "instantWithdrawal": false,
+    "lowFeeMode": true,
+    "maximizeEarnings": true,
+    "currencyConversion": true,
+    "preferredCurrency": "USD"
+  },
+  "security": {
+    "encryptionEnabled": true,
+    "sslVerification": true,
+    "fraudDetection": true,
+    "buyerProtection": true,
+    "sellerProtection": true
+  },
+  "features": {
+    "recurring": true,
+    "subscriptions": true,
+    "donations": true,
+    "invoicing": true,
+    "massPayments": false,
+    "adaptivePayments": false,
+    "payouts": true,
+    "smartButtons": true
+  },
+  "analytics": {
+    "trackRevenue": true,
+    "generateReports": true,
+    "realTimeMonitoring": true,
+    "transactionHistory": true,
+    "revenueForecasting": true
+  },
+  "profitMaximization": {
+    "dynamicPricing": false,
+    "suggestedTips": true,
+    "crossPromotion": true,
+    "emailMarketing": true,
+    "customerRetention": true
+  },
+  "dataRetention": {
+    "maintainTransactionHistory": true,
+    "archivePeriod": "indefinite",
+    "backupEnabled": true,
+    "exportEnabled": true
+  }
+}
